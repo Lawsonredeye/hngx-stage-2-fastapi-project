@@ -1,0 +1,13 @@
+name: Deploy project
+
+on:
+  pull_request:
+    branches:
+      - main
+  
+jobs:
+  deployment:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
