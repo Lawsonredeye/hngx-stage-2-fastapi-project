@@ -71,4 +71,4 @@ async def get_books_by_id(book_id: int) -> Book:
 
 @router.get("/kick")
 async def get_something() -> None:
-    return JSONResponse({"message": "hello lawson from devops"})
+    return JSONResponse({"message": "hello lawson from devops and the best code guru"})
