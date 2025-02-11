@@ -35,6 +35,6 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /root/hngx-stage-2-fastapi-project
-            git pull origin main
+            git pull origin main && echo "i was pushed"
             source venv/bin/activate
             pip install -r requirements.txt

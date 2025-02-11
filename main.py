@@ -24,4 +24,4 @@ async def health_check():
 
 @app.get("/msg")
 async def hello():
-    return {"msg": "hello bot"}
+    return {"msg": "hello bot, from HNG track"}
