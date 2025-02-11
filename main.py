@@ -24,4 +24,4 @@ async def health_check():
 
 @app.get("/msg")
 async def hello():
-    return {"msg": "hello bot, from HNG track again from base 1"}
+    return {"msg": "hello Github actions, my dear friend!"}
