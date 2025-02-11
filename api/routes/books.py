@@ -68,3 +68,7 @@ async def get_books_by_id(book_id: int) -> Book:
         return JSONResponse({"detail": "Book not found"}, status_code=status.HTTP_404_NOT_FOUND)
 
     return db.get_book(book_id)
+
+@router.get("/kick")
+async def get_something() -> None:
+    return JSONResponse({"message": "hello lawson from devops"})
