@@ -1,7 +1,7 @@
 name: Deploy project
 
 on:
-  pull_request:
+  push:
     branches:
       - main
   
@@ -36,5 +36,6 @@ jobs:
           script: |
             cd /root/hngx-stage-2-fastapi-project
             git pull origin main
+            echo "whats goooo" > testfile
             source venv/bin/activate
             pip install -r requirements.txt
