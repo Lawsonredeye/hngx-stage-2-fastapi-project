@@ -23,9 +23,3 @@ jobs:
       
       - name: Run tests
         run: pytest
-      
-      - name: Start FastAPI server
-        run: uvicorn main:app --host 0.0.0.0 --port 8000 & sleep 3
-      
-      - name: Stop Server
-        run: pkill -f "uvicorn"
